@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ArtViewer" />
+		<Option pch_mode="2" />
+		<Option compiler="clang" />
+		<Option virtualFolders="imgui/;gapi/;sdl/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ArtViewer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-m64" />
+					<Add option="-g" />
+					<Add option="-std=c++17" />
+					<Add directory="/usr/include/SDL2" />
+					<Add directory="imgui" />
+				</Compiler>
+				<Linker>
+					<Add option="-m64" />
+					<Add library="SDL2" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ArtViewer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-m64" />
+					<Add option="-std=c++17" />
+					<Add directory="/usr/include/SDL2" />
+					<Add directory="imgui" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-m64" />
+					<Add library="SDL2" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Weverything" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="imgui/imconfig.h">
+			<Option virtualFolder="imgui/" />
+		</Unit>
+		<Unit filename="imgui/imgui.cpp">
+			<Option virtualFolder="imgui/" />
+		</Unit>
+		<Unit filename="imgui/imgui.h">
+			<Option virtualFolder="imgui/" />
+		</Unit>
+		<Unit filename="imgui/imgui.natvis">
+			<Option virtualFolder="imgui/" />
+		</Unit>
+		<Unit filename="imgui/imgui_demo.cpp">
+			<Option virtualFolder="imgui/" />
+		</Unit>
+		<Unit filename="imgui/imgui_draw.cpp">
+			<Option virtualFolder="imgui/" />
+		</Unit>
+		<Unit filename="imgui/imgui_impl_sdl.cpp">
+			<Option virtualFolder="sdl/" />
+		</Unit>
+		<Unit filename="imgui/imgui_impl_sdl.h">
+			<Option virtualFolder="sdl/" />
+		</Unit>
+		<Unit filename="imgui/imgui_impl_vulkan.cpp">
+			<Option virtualFolder="gapi/" />
+		</Unit>
+		<Unit filename="imgui/imgui_impl_vulkan.h">
+			<Option virtualFolder="gapi/" />
+		</Unit>
+		<Unit filename="imgui/imgui_internal.h">
+			<Option virtualFolder="imgui/" />
+		</Unit>
+		<Unit filename="imgui/imgui_widgets.cpp">
+			<Option virtualFolder="imgui/" />
+		</Unit>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
