@@ -1,0 +1,5 @@
+.vs
+/imgui.ini
+/example_sdl_vulkan.vcxproj.user
+/bin
+/*.user

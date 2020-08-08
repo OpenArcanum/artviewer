@@ -14,6 +14,9 @@
     <Filter Include="gapi">
       <UniqueIdentifier>{17df1acf-3c7e-44f3-b775-e3653bfc4013}</UniqueIdentifier>
     </Filter>
+    <Filter Include="formats">
+      <UniqueIdentifier>{56f7234e-bb87-42a9-897e-56f13feb279d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -37,6 +40,9 @@
     <ClCompile Include="imgui\imgui_impl_vulkan.cpp">
       <Filter>gapi</Filter>
     </ClCompile>
+    <ClCompile Include="formats\art.cpp">
+      <Filter>formats</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="imgui\imconfig.h">
@@ -53,6 +59,9 @@
     </ClInclude>
     <ClInclude Include="imgui\imgui_impl_vulkan.h">
       <Filter>gapi</Filter>
+    </ClInclude>
+    <ClInclude Include="formats\art.h">
+      <Filter>formats</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
