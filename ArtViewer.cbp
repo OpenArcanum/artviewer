@@ -5,7 +5,7 @@
 		<Option title="ArtViewer" />
 		<Option pch_mode="2" />
 		<Option compiler="clang" />
-		<Option virtualFolders="imgui/;gapi/;sdl/;" />
+		<Option virtualFolders="imgui/;gapi/;sdl/" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/ArtViewer" prefix_auto="1" extension_auto="1" />
@@ -22,6 +22,7 @@
 				<Linker>
 					<Add option="-m64" />
 					<Add library="SDL2" />
+					<Add library="vulkan" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -30,16 +31,17 @@
 				<Option type="1" />
 				<Option compiler="clang" />
 				<Compiler>
-					<Add option="-O2" />
 					<Add option="-m64" />
+					<Add option="-O2" />
 					<Add option="-std=c++17" />
 					<Add directory="/usr/include/SDL2" />
 					<Add directory="imgui" />
 				</Compiler>
 				<Linker>
-					<Add option="-s" />
 					<Add option="-m64" />
+					<Add option="-s" />
 					<Add library="SDL2" />
+					<Add library="vulkan" />
 				</Linker>
 			</Target>
 		</Build>
@@ -84,9 +86,6 @@
 			<Option virtualFolder="imgui/" />
 		</Unit>
 		<Unit filename="main.cpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
