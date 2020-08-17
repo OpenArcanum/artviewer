@@ -17,6 +17,9 @@
     <Filter Include="formats">
       <UniqueIdentifier>{56f7234e-bb87-42a9-897e-56f13feb279d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="app">
+      <UniqueIdentifier>{4d3a6633-9bfc-4f3c-aba9-2e924bb56255}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -37,11 +40,17 @@
     <ClCompile Include="imgui\imgui_impl_sdl.cpp">
       <Filter>sdl</Filter>
     </ClCompile>
-    <ClCompile Include="imgui\imgui_impl_vulkan.cpp">
-      <Filter>gapi</Filter>
-    </ClCompile>
     <ClCompile Include="formats\art.cpp">
       <Filter>formats</Filter>
+    </ClCompile>
+    <ClCompile Include="gapi\imgui_impl_vulkan.cpp">
+      <Filter>gapi</Filter>
+    </ClCompile>
+    <ClCompile Include="gapi\artviewer_vulkan.cpp">
+      <Filter>gapi</Filter>
+    </ClCompile>
+    <ClCompile Include="app\ArtViewer.cpp">
+      <Filter>app</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -57,11 +66,17 @@
     <ClInclude Include="imgui\imgui_impl_sdl.h">
       <Filter>sdl</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\imgui_impl_vulkan.h">
-      <Filter>gapi</Filter>
-    </ClInclude>
     <ClInclude Include="formats\art.h">
       <Filter>formats</Filter>
+    </ClInclude>
+    <ClInclude Include="gapi\imgui_impl_vulkan.h">
+      <Filter>gapi</Filter>
+    </ClInclude>
+    <ClInclude Include="gapi\artviewer_vulkan.h">
+      <Filter>gapi</Filter>
+    </ClInclude>
+    <ClInclude Include="app\ArtViewer.h">
+      <Filter>app</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
